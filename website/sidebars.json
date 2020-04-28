@@ -1,0 +1,10 @@
+{
+  "docs": {
+    "Primeiros Passos": ["doc1"],
+    "Videoconferência": ["doc2"],
+    "Gravações": ["doc3"]
+  },
+  "docs-other": {
+    "Outros": ["doc4", "doc5"]
+  }
+}
