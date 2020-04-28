@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Instruções basicas para uso da  videoconferência · Videoconferência</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Inicio"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Instruções basicas para uso da  videoconferência · Videoconferência"/><meta property="og:type" content="website"/><meta property="og:url" content="https://suportesutel.github.io/jitsi-sutel/"/><meta property="og:description" content="## Inicio"/><meta property="og:image" content="https://suportesutel.github.io/jitsi-sutel/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://suportesutel.github.io/jitsi-sutel/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/jitsi-sutel/img/sunet_logo.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/jitsi-sutel/js/scrollSpy.js"></script><link rel="stylesheet" href="/jitsi-sutel/css/main.css"/><script src="/jitsi-sutel/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/jitsi-sutel/"><img class="logo" src="/jitsi-sutel/img/sunet_logo_branco.png" alt="Videoconferência"/><h2 class="headerTitleWithLogo">Videoconferência</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive siteNavItemActive"><a href="/jitsi-sutel/docs/doc1" target="_self">Começar</a></li><li class="siteNavGroupActive"><a href="/jitsi-sutel/docs/doc2" target="_self">Gravações</a></li><li class=""><a href="/jitsi-sutel/help" target="_self">Ajuda</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Primeiros Passos</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Primeiros Passos</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/jitsi-sutel/docs/doc1">Básico</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Videoconferência</h3><ul class=""><li class="navListItem"><a class="navItem" href="/jitsi-sutel/docs/doc2">Vídeo Chat</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Gravações</h3><ul class=""><li class="navListItem"><a class="navItem" href="/jitsi-sutel/docs/doc3">Gravando Conferência</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Instruções basicas para uso da  videoconferência</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="inicio"></a><a href="#inicio" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Inicio</h2>
+<p>Vamos começar efeutando o cadastro,
+Para isso voce deve <a href="https://wa.me/558491697531">Entrar em contato</a> com a SEAD/COTIC para que seja enviado o link de registro.</p>
+<h2><a class="anchor" aria-hidden="true" id="tela-de-cadastro"></a><a href="#tela-de-cadastro" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tela de cadastro</h2>
+<p>Ao clicar no link enviado você  sera enviado para essa tela:
+<img src="/jitsi-sutel/docs/assets/register.JPG" alt="alt-text">
+Nela, o usuário deve realizar seu cadastro inserindo as informações como nome, e-mail válido e senha que deve conter no mínimo 7 caracteres, após todos os campos preenchidos, o usuário deve confirmar o registro clicando no botão registrar-se.</p>
+<h2><a class="anchor" aria-hidden="true" id="escolhendo-nome-de-usuario"></a><a href="#escolhendo-nome-de-usuario" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Escolhendo nome de usuario</h2>
+<p>Depois de registrado no sistema, o usuário é direcionado para uma nova tela em que deve escolher o nome do perfil dentro do ambiente.
+Essa identidade pode ser modificada em “Minha Conta”.</p>
+<p><img src="/jitsi-sutel/docs/assets/register_confirm.JPG" alt="alt-text"></p>
+<h2><a class="anchor" aria-hidden="true" id="apresentação"></a><a href="#apresentação" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Apresentação</h2>
+<p>Após o cadastro será apresentada as salas de chat.</p>
+<p><img src="/jitsi-sutel/docs/assets/principal.png" alt="alt-text"></p>
+<p>Uma vez dentro da sala, podemos interagir com os usuários como também iniciar videoconferência.</p>
+<h2><a class="anchor" aria-hidden="true" id="menu-lateral"></a><a href="#menu-lateral" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Menu Lateral</h2>
+<p>No menu lateral podemos ver as informações relacionadas ao perfil de usuário, conversas, Canais públicos ou privados, discussões e mensagens diretas.</p>
+<p><img src="/jitsi-sutel/docs/assets/menu_lado.png" alt="alt-text"></p>
+<h2><a class="anchor" aria-hidden="true" id="perfil"></a><a href="#perfil" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Perfil</h2>
+<p>Clicando na foto do usuário, encontramos os status do usuário e as configurações de conta.</p>
+<p><img src="/jitsi-sutel/docs/assets/lateral.png" alt="alt-text"></p>
+<p>Clicando no campo minha conta, somos redirecionados para uma nova tela em que podemos modificar as informações. Para isso devemos selecionar no menu lateral o campo “Perfil”, como mostra na figura abaixo.</p>
+<p><img src="/jitsi-sutel/docs/assets/Register_Perfil.JPG" alt="alt-text"></p>
+<h2><a class="anchor" aria-hidden="true" id="iniciando-videoconferência"></a><a href="#iniciando-videoconferência" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Iniciando Videoconferência</h2>
+<p>Para acessarmos o chat de vídeo é necessário que estejamos logados na sala de chat.</p>
+<p>Dentro dela devemos buscar o botão mais (três pontinhos) localizado no canto superior direito,
+Após clicar será apresentado um menu onde podemos inicializar uma videoconferência
+escolhendo o item destacado abaixo &quot;Video Chat&quot; , como mostra a imagem a seguir:</p>
+<p><img src="/jitsi-sutel/docs/assets/videochat1.png" alt="alt-text"></p>
+<p>Depois disso, uma nova guia é
+aberta com a tela de confirmação:</p>
+<p><img src="/jitsi-sutel/docs/assets/telaconfirma.png" alt="alt-text"></p>
+<p>Basta clicar em “Sim” e entrar na sala de vídeo.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/jitsi-sutel/docs/doc2"><span>Vídeo Chat</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#inicio">Inicio</a></li><li><a href="#tela-de-cadastro">Tela de cadastro</a></li><li><a href="#escolhendo-nome-de-usuario">Escolhendo nome de usuario</a></li><li><a href="#apresentação">Apresentação</a></li><li><a href="#menu-lateral">Menu Lateral</a></li><li><a href="#perfil">Perfil</a></li><li><a href="#iniciando-videoconferência">Iniciando Videoconferência</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/jitsi-sutel/" class="nav-home"><img src="/jitsi-sutel/img/sunet_logo.png" alt="Videoconferência" width="66" height="58"/></a><div><h5>Documentação</h5><a href="/jitsi-sutel/docs/en/doc1.html">Primeiros passos</a><a href="/jitsi-sutel/docs/en/doc2.html">VídeoChat</a><a href="/jitsi-sutel/docs/en/doc3.html">Gravações</a></div><div><h5>Comunidade</h5><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>Mais</h5><a href="https://github.com/suportesutel">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="http://www.cotic.rn.gov.br/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/jitsi-sutel/img/sunet_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 COTIC-SUTEL</section></footer></div></body></html>
